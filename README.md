@@ -8,7 +8,7 @@
  
  + This gave an accuracy of around 97.39% after 20,000 steps.
  
- + By chaning the `GradientOptimizer` to the `AdamOptimizer` and the learning rate to `1e-3`, I was able to improve accuracy to around 99.02% after 20,000 steps. 
+ + By chaining the `GradientOptimizer` to the `AdamOptimizer` and the learning rate to `1e-3`, I was able to improve accuracy to around 99.02% after 20,000 steps. 
     
     - The `AdamOptimizer` uses moving averages of the parameters allowing it to use larger more effective steps (Bengio, 2012), which helped speed up training and improve accuracy. Choosing `1e-3` as learning rate was a product of experimentation.
  

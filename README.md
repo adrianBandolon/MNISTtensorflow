@@ -20,10 +20,16 @@
 
  + The tutorial gave an accuracy of around 69.79% after 20,000 steps
 
-- To improve on TensorFlow's CIFAR10 tutorial baseline accuracy of 71.62% after 2000 steps, we changed the activation functions of the two local (local 3 and local 4) fully connected layers from `relu` to `relu6`. Our decision to use `relu6` was based on experimentation. We later found that Krizhevsky (2010), used  the `relu6` activation similarly on the CIFAR10 dataset.
+- To improve on TensorFlow's CIFAR10 tutorial baseline accuracy of 71.62% after 2000 steps, I changed the activation functions of the two local (local 3 and local 4) fully connected layers from `relu` to `relu6`. The decision to use `relu6` was based on experimentation. I later found that Krizhevsky (2010), used  the `relu6` activation similarly on the CIFAR10 dataset.
 
-- Aside from changing activation functions, we also moved from `GradientOptimizer` to `AdamOptimizer`. Since the `AdamOptimizer` uses smaller learning rates we changed the `INITIAL_LEARNING_RATE` from `0.1` to `0.001`. 
+- Aside from changing activation functions, I also moved from `GradientOptimizer` to `AdamOptimizer`. Since the `AdamOptimizer` uses smaller learning rates we changed the `INITIAL_LEARNING_RATE` from `0.1` to `0.001`. 
 
-- From experimentation, we settled to the batch size `500`. This was also a modification from `128`.
+- From experimentation, I settled to the batch size `500`. This was also a modification from `128`.
 
-- With all these modifications we were able to achieve an accuracy of **76.88%** after 2000 steps.
+- With all these modifications I was able to achieve an accuracy of **76.88%** after 2000 steps.
+
+### References:
+
+Bengio, Yoshua. *Practical Recommendations for Gradient-Based Training of Deep Architectures:Version 2*. Sept. 2012
+
+Krizhevsky, Alex. *Convolutional Deep Belief Networks on CIFAR-10*. Aug. 2010
